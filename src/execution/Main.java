@@ -1,11 +1,36 @@
 package execution;
 
+//import fils.Student;
 import fils.Student;
 import fils.Teacher;
 import base.Person;
 
 public class Main {
+
+
+//    -------Exemple surcharge : Overloading--------
+    public static int somme(int a, int b) {
+        return a + b ;
+    }
+    public static int somme(int a, int b , int c) {
+        return a + b + c ;
+    }
+    public int somme(int a, int b , int c , int d) {
+        return a + b + c + d ;
+    }
+//    -------Exemple surcharge : Overloading--------
+
     public static void main(String[] args) {
+        System.out.println("=== Exécution du programme Exemple surcharge : Overloading ===");
+        Main m = new Main();
+        System.out.println(somme(5, 10));
+        System.out.println(somme(5, 10 , 6));
+        System.out.println(m.somme(5, 10 , 6 , 8));
+        System.out.println("=== Exécution du programme Exemple surcharge : Overloading ===");
+
+
+        Person p = new Student("Ali" , 22 , "1234AB" , 5.5);
+        p.parle();
         // Appel direct à la variable static totalPersons
         System.out.println("Nombre total de personnes avant création : " + Person.totalPersons);
 

@@ -51,4 +51,8 @@ public class Person {
         }else
             return b;
     }
+
+       public static void parle(){
+            System.out.println("je parle comme etant une personne");
+        }
 }

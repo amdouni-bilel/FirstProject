@@ -30,9 +30,15 @@ public class Student extends Person {
         this.averageScore = averageScore;
     }
 
+
     public void displayInfoStudent() {
         System.out.println("Student ID: " + studentId + ", Average Score: " + averageScore);
     }
+
+//        @Override
+//        public void parle(){
+//            System.out.println("je parle comme etant une etudiant ");
+//        }
 
 
 }
